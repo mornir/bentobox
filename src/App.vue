@@ -1,14 +1,25 @@
 <template>
   <v-app dark>
     <v-toolbar class="primary">
-      <v-toolbar-title v-text="title"></v-toolbar-title>
+      <v-toolbar-title>Bento-Box Lieferservice</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>fa-twitter</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>fa-facebook-square</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>fa-google-plus</v-icon>
+      </v-btn>
+    </v-toolbar>
     </v-toolbar>
     <main class="primary">
       <section>
         <v-parallax src="/static/img/bento_on_the_beach6p.jpg" height="600">
           <v-layout column align-center justify-center>
             <img src="/static/img/ki.png" id="logo" alt="Vuetify.js" width="200px">
-            <h1 class="mb-2 display-3">Parallax Template</h1>
+            <h1 class="mb-2 display-3 text-xs-center">Parallax Template</h1>
             <div class="headline mb-3 text-xs-center">Powered by Vuetify</div>
             <v-btn class="accent mt-5" large>
               Get Started
@@ -78,7 +89,7 @@
       <section>
         <v-parallax src="/static/img/bentoboxxx_300.jpg" height="300">
           <v-layout column align-center justify-center>
-            <div class="headline mb-3">Web development has never been easier</div>
+            <div class="headline mb-3 text-xs-center">Web development has never been easier</div>
             <em>Kick-start your application today</em>
             <v-btn class="accent mt-5" large href="/pre-made-themes">
               Get Started
@@ -162,16 +173,7 @@
 export default {
   data() {
     return {
-      clipped: false,
-      drawer: true,
-      fixed: false,
-      items: [
-        { icon: 'bubble_chart', title: 'Inspire' }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Bento-Box Lieferservice'
+
     }
   }
 }
